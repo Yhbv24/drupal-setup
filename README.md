@@ -24,3 +24,15 @@
 6. Under `Advanced Options`
    * Host: 127.0.0.1
    * Port: 8889
+
+# Using Git to backup project
+* Rename or remove .gitignore
+* Save database export into sites/db-backup
+   * Export, Custom, Select All tables
+   * Save Output to a file, zipped
+   * Format SQL, structure and data
+   * Object Creation All _except_ `if not exists`
+
+
+* After cloning repo, import saved database
+* If site doesn't load, user may need to be recreated; see `sites/default/settings.php` in your project folder for user name/password
